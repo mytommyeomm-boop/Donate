@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a0b12"><title>โดเนท</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&family=Kanit:wght@400;600&family=Sarabun:wght@400;600&family=Mitr:wght@400;500&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/style.css"></head><body>
+<main class="dn"><div id="loading" class="state"><div class="spin"></div></div>
+<div id="missing" class="card state hide"><div class="em">🔍</div><h2>ไม่พบหน้านี้</h2><p class="mu">ตรวจสอบลิงก์โดเนทอีกครั้ง</p><a class="btn" href="/" style="margin-top:14px">กลับหน้าแรก</a></div>
+<div class="who"><div class="big" id="av"></div><h2 id="who-n"></h2><p class="mu" id="who-b"></p></div>
+<form id="donForm" class="card hide" novalidate>
+<div class="notice hide" id="devnote" style="margin:0 0 6px">โหมดทดสอบ: รายการทั้งหมดเป็นข้อมูลทดสอบ ไม่มีการตัดเงินจริง</div>
+<label>ชื่อของคุณ</label><input name="name" maxlength="40" autocomplete="nickname" placeholder="เช่น น้องมิ้นท์">
+<label>เลือกจำนวนเงิน (THB)</label><div class="chips" id="chips"></div><input id="custom" type="number" inputmode="numeric" step="1" placeholder="หรือกรอกจำนวนเอง" style="margin-top:8px"><p class="hint" id="minhint"></p>
+<label>ข้อความถึงสตรีมเมอร์ (<span id="cnt">0</span>/200)</label><textarea name="message" maxlength="200" placeholder="พิมพ์ข้อความ..."></textarea>
+<label>ตัวอย่างการแจ้งเตือน</label><div class="pv" id="pv"></div>
+<div class="err" id="err" role="alert"></div><button class="btn block" id="go">ไปชำระเงิน</button></form>
+<div id="status" class="card hide"></div></main>
+<script src="/js/main.js"></script><script src="/js/donation.js"></script></body></html>

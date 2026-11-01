@@ -1,0 +1,1 @@
+{"name":"streamdonate","version":"1.0.0","private":true,"description":"Donation platform for live streamers (no dependencies)","scripts":{"start":"node server.js","dev":"DEV_MODE=1 node server.js"},"engines":{"node":">=18"}}
